@@ -6,7 +6,9 @@ function Categories() {
     <div>
       <Navbar />
       <div className="container">
-        <h2>Book Catagoris!</h2>
+        <br />
+        <h4>Book Categoris!</h4>
+        <button type="button" className="btn btn-light">Check Status</button>
       </div>
 
     </div>

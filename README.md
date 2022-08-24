@@ -10,7 +10,7 @@
 - Redux 
 - VS Code
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
@@ -39,6 +39,12 @@ cd bookstor
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page.
 
 ## Acknowledgments
 

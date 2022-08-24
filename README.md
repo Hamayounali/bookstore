@@ -17,14 +17,42 @@ Under development
 
 ## Getting Started
 
+To get the content of this project locally you need to run this command in your terminal
+Before, make sure you have [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/) and [Node.js](https://nodejs.dev/learn/how-to-install-nodejs) installed in your computer.
 
-To get a local copy of this exercice, Please follow these simple example steps.
+1. `git clone https://github.com/tresorsawasawa/Bookstore.git`
+2. `cd Bookstore`
+3. `npm install` 
+  This will download all the dependancies of the project.
+4. `npm start` 
+  The page will open at http://localhost:3000 in your browser.
 
-Clone this repository or download the Zip folder:
-git@github.com:Hamayounali/bookstore.git
+### Builds the app for production
 
-Navigate to the location of the folder in your machine:
-cd bookstor
+`npm run build`
+
+It correctly bundles React in production mode and optimizes the build for the best performance. 
+
+## Test
+
+For tracking linter errors locally you need to follow these steps:
+
+- After cloning the project make sure you have run this command
+
+  > `npm install` command
+
+- For tracking the linter errors in HTML file run:
+
+  > `npx hint .`
+
+- For tracking the linter errors in CSS file run:
+
+  > `npx stylelint "\*_/_.{css,scss}"`
+
+- And For tracking the linter errors in JavaScript file run:
+
+  > `npx eslint .`
+
 
 
 ## Authors
@@ -55,5 +83,3 @@ Feel free to check the issues page.
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

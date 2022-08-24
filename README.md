@@ -6,13 +6,9 @@
 
 
 ## Built With
-
-- CSS
-- BootStrap
-- JavaScript
-- React
+- React Js
 - Redux 
-- Github
+- VS Code
 
 ## Live Demo (if available)
 
@@ -22,21 +18,13 @@
 ## Getting Started
 
 
+To get a local copy of this exercice, Please follow these simple example steps.
 
-To get a local copy up and running follow these simple example steps.
+Clone this repository or download the Zip folder:
+git@github.com:Hamayounali/bookstore.git
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+Navigate to the location of the folder in your machine:
+cd bookstor
 
 
 ## Authors

@@ -1,19 +1,20 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Bookstore
 
-> Booksoter Application is used store and retrive book's title, description and categoreis. It is developed by using React, Redux, JavaScript, CSS and Bootstrap. 
+<img width="852" alt="Capture" src="https://user-images.githubusercontent.com/22744775/186435992-8f1d2589-1069-4eae-9d70-f9f82c57b9a8.PNG">
 
+## Description
+> Booksoter Application is used store and retrive book's title, description and categoreis. It is developed by using React, Redux, JavaScript, CSS and Bootstrap. 
 
 ## Built With
 - React Js
 - Redux 
-- VS Code
+- JavaScript 
+- HTML
+- CSS - BootStrap
 
 ## Live Demo
 
 Under development 
-
 
 ## Getting Started
 
@@ -52,7 +53,6 @@ For tracking linter errors locally you need to follow these steps:
 - And For tracking the linter errors in JavaScript file run:
 
   > `npx eslint .`
-
 
 
 ## Authors

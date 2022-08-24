@@ -57,7 +57,7 @@ For tracking linter errors locally you need to follow these steps:
 
 ## Authors
 
-👤 **Author1**
+👤 **Hamayoun Ali**
 
 - GitHub: [@Hamayounali](https://github.com/Hamayounali)
 - Twitter: [@hamayounAli6](https://twitter.com/hamayounAli6)

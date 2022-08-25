@@ -1,28 +1,49 @@
-import React from 'react';
+import { React, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { nanoid } from '@reduxjs/toolkit';
+import { addBook } from '../redux/books/books';
 
-function AddBooks() {
+function AddBook() {
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+
+  function addTitle(e) {
+    setTitle(e.target.value);
+  }
+
+  function addAuthor(e) {
+    setAuthor(e.target.value);
+  }
+
+  const add = (e) => {
+    e.preventDefault();
+    if (title !== '' && author !== '') {
+      const id = nanoid();
+      dispatch(addBook({ id, title, author }));
+      e.target.reset();
+    }
+  };
+
   return (
-    <div>
-      <div className="container">
-        <h4>ADD NEW BOOK</h4>
-        <form>
-          <div className="row">
-            <div className="col-sm-7">
-              <input type="text" className="form-control" placeholder="Book Titel" name="bookTitle" />
-            </div>
-            <div className="col-sm-3">
-              <input type="password" className="form-control" placeholder="Author" name="author" />
-            </div>
-            <div className="col-sm-2">
-              <button type="submit" className="btn btn-primary">Add Book</button>
-            </div>
+    <div className="container">
+      <br />
+      <h4>ADD NEW BOOK</h4>
+      <form className="add" onSubmit={add}>
+        <div className="row">
+          <div className="col-sm-7">
+            <input type="text" className="form-control" placeholder="Book Title" onChange={addTitle} required />
           </div>
-        </form>
-
-      </div>
-
+          <div className="col-sm-3">
+            <input type="text" className="form-control" placeholder="Book Author" onChange={addAuthor} required />
+          </div>
+          <div className="col-sm-2">
+            <button type="submit" className="btn btn-primary">Add Book</button>
+          </div>
+        </div>
+      </form>
     </div>
   );
 }
 
-export default AddBooks;
+export default AddBook;

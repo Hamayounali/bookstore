@@ -1,17 +1,20 @@
 import React from 'react';
-import Navbar from './Navbar';
+import { useSelector, useDispatch } from 'react-redux';
+import { checkStatus } from '../redux/categories/categories';
 
 function Categories() {
+  const dispatch = useDispatch();
+  const category = useSelector((state) => state.checkStatus);
+  const viewStatus = () => {
+    dispatch(checkStatus());
+  };
   return (
-    <div>
-      <Navbar />
-      <div className="container">
-        <br />
-        <h4>Book Categoris!</h4>
-        <button type="button" className="btn btn-light">Check Status</button>
-      </div>
-
+    <div className="container">
+      <br />
+      <h3>{category}</h3>
+      <button type="button" className="btn btn-primary" onClick={viewStatus}>Check Status</button>
     </div>
   );
 }
+
 export default Categories;

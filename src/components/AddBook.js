@@ -8,13 +8,13 @@ function AddBook() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
-  function addTitle(e) {
+  const addTitle = (e) => {
     setTitle(e.target.value);
-  }
+  };
 
-  function addAuthor(e) {
+  const addAuthor = (e) => {
     setAuthor(e.target.value);
-  }
+  };
 
   const add = (e) => {
     e.preventDefault();

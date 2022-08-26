@@ -2,10 +2,11 @@ const CHECK_STATUS = 'bookstore/categories/CHECK';
 
 const initialState = [];
 
-const checkReducer = (action, state = initialState) => {
+// eslint-disable-next-line default-param-last
+const checkReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'Under construction';
+      return 'Categories is under construction';
     default:
       return state;
   }

@@ -3,20 +3,23 @@ import { nanoid } from '@reduxjs/toolkit';
 const ADD_BOOK = 'bookstore/books/addBook';
 const REMOVE_BOOK = 'bookstore/books/removeBook';
 
-const initialState = [];
+const initialState = [
+  {
+    id: nanoid(),
+    title: 'React Basics',
+    author: 'Ahamd Jan',
+  }];
 
-const bookReducer = (action, state = initialState) => {
+// eslint-disable-next-line default-param-last
+const addRemoveReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [
         ...state,
-        {
-          id: action.payload.id,
-          description: action.payload.book,
-        },
+        action.book,
       ];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload.id);
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
@@ -24,17 +27,12 @@ const bookReducer = (action, state = initialState) => {
 
 export const addBook = (book) => ({
   type: ADD_BOOK,
-  payload: {
-    book,
-    id: nanoid(),
-  },
+  book,
 });
 
 export const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  payload: {
-    id,
-  },
+  id,
 });
 
-export default bookReducer;
+export default addRemoveReducer;

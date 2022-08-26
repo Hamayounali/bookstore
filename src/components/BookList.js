@@ -2,7 +2,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Book from './Book';
-import AddBook from './addBook';
+import AddBook from './AddBook';
 
 function Books() {
   const books = useSelector((state) => state.books);

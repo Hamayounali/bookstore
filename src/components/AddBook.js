@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
-import { addBook } from '../redux/books/books';
+import { storeBookToAPI } from '../redux/books/books';
 
 function AddBook() {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ function AddBook() {
     e.preventDefault();
     if (title !== '' && author !== '') {
       const id = nanoid();
-      dispatch(addBook({ id, title, author }));
+      dispatch(storeBookToAPI({ id, title, author }));
       e.target.reset();
     }
   };

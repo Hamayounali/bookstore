@@ -28,7 +28,8 @@ function AddBook() {
   return (
     <div className="container">
       <br />
-      <h4>ADD NEW BOOK</h4>
+      <hr />
+      <h4 className="form-title">ADD NEW BOOK</h4>
       <form className="add" onSubmit={add}>
         <div className="row">
           <div className="col-sm-7">
@@ -38,10 +39,11 @@ function AddBook() {
             <input type="text" className="form-control" placeholder="Book Author" onChange={addAuthor} required />
           </div>
           <div className="col-sm-2">
-            <button type="submit" className="btn btn-primary">Add Book</button>
+            <button type="submit" className="btn btn-primary add-book">Add Book</button>
           </div>
         </div>
       </form>
+      <br />
     </div>
   );
 }

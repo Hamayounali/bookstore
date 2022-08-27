@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 body {
   background-color: #fafafa;
- }
+}
 
 .panel-bg {
   height: 5.938rem;
@@ -12,7 +13,7 @@ body {
 }
 
 .Bookstore-CMS {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   text-decoration: none;
@@ -40,7 +41,7 @@ body {
 .book {
   padding-top: 0.5rem;
   padding-left: 1.5rem;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
   color: #121212;
@@ -50,7 +51,7 @@ body {
   padding-top: 0.5rem;
   padding-left: 1.4rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
   color: #121212;
@@ -75,7 +76,7 @@ body {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: #121212;
 }
@@ -85,7 +86,7 @@ body {
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -103,21 +104,17 @@ body {
 }
 
 .Current-Chapter {
-  width: 7.875rem;
-  height: 1.125rem;
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   color: #121212;
 }
 
 .Current-Lesson {
-  width: 4.688rem;
-  height: 1.313rem;
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -131,9 +128,7 @@ body {
 }
 
 .Update-progress {
-  width: 8.938rem;
-  height: 1.125rem;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -153,7 +148,7 @@ body {
 .School-of {
   padding-left: 1rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   color: #121212;
 }
@@ -177,7 +172,7 @@ body {
 }
 
 .form-title {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;

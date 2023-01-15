@@ -1,6 +1,6 @@
 # Bookstore
 
-<img width="852" alt="Capture" src="https://user-images.githubusercontent.com/22744775/186435992-8f1d2589-1069-4eae-9d70-f9f82c57b9a8.PNG">
+![image](https://user-images.githubusercontent.com/22744775/212524821-624dfd48-90f7-4005-bb6d-ea6d0bb0fbcf.png)
 
 ## Description
 > Booksoter Application is used store and retrive book's title, description and categoreis. It is developed by using React, Redux, JavaScript, CSS and Bootstrap. 
